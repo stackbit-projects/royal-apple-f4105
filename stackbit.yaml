@@ -1,0 +1,28 @@
+stackbitVersion: ~0.3.0
+ssgName: gatsby
+nodeVersion: '15'
+publishDir: public
+pagesDir: content/blog
+models:
+  blog:
+    type: page
+    label: Blog
+    match: '**/*'
+    fields:
+      - type: string
+        name: title
+        label: Title
+      - type: datetime
+        name: date
+        label: Date
+      - type: string
+        name: description
+        label: Description
+      - type: image
+        name: img
+        label: Img
+      - type: list
+        name: tags
+        label: Tags
+        items:
+          type: string
